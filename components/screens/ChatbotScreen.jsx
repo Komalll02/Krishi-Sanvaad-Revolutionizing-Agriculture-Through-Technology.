@@ -9,7 +9,7 @@ const ChatbotScreen = () => {
   const sendMessageToRasa = async (userMessage) => {
     try {
       // Replace '192.168.x.x' with your local machine's IP address
-      const response = await axios.post('http://192.168.0.105:5005/webhooks/rest/webhook', {
+      const response = await axios.post('http://192.168.0.104:5005/webhooks/rest/webhook', {
         sender: 'user1',
         message: userMessage
       });
